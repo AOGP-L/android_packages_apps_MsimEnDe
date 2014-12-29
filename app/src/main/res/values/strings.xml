@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Msim EnDe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="already_enabled">DualSim already enabled !</string>
+    <string name="already_disabled">DualSim already disabled !</string>
+    <string name="reboot_text">Your device will reboot now !</string>
+    <string name="disabled_reboot_text">Reboot button can only be pressed after you enable or disable Dual-SIM</string>
+    <string name="enMsim_successful">DualSim Enabled successfully, press the red reboot button.</string>
+    <string name="deMsim_successful">DualSim Disabled successfully, press the red reboot button.</string>
+
+</resources>

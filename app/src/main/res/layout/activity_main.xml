@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/msimbg"
+        android:background="@drawable/msim_endebg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+         />
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="320dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/ripple_fab"
+        android:id="@+id/fabbutton"
+        android:elevation="4dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/dual_sim"
+        android:onClick="EnableDualSim"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/ripple_fab"
+        android:id="@+id/fabbutton2"
+        android:elevation="4dp"
+        android:src="@drawable/single_sim"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="93dp"
+        android:onClick="DisableDualSim"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/ripple_fab"
+        android:id="@+id/fabbutton3"
+        android:elevation="4dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="173dp"
+        android:src="@drawable/ic_action_refresh"
+        android:onClick="RebootDevice"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/ripple_fab"
+        android:id="@+id/fabbutton4"
+        android:elevation="4dp"
+        android:src="@drawable/ic_action_web_site"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="253dp"
+        android:onClick="GoToPage"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
