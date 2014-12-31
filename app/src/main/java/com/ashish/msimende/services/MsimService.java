@@ -80,7 +80,7 @@ public class MsimService extends Service {
                 Log.i(TAG, "MsimEnDe: propOut returned 0");
                 PackageManager pm = getPackageManager();
                 pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-                Toast.makeText(getApplicationContext(), getString(com.ashish.msimende.R.string.msim_available), Toast.LENGTH_LONG);
+                Toast.makeText(getApplicationContext(), getString(com.ashish.msimende.R.string.msim_available), Toast.LENGTH_LONG).show();
 
             }
 
