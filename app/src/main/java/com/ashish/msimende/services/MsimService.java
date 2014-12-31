@@ -66,7 +66,7 @@ public class MsimService extends Service {
             String one = "1";
             String zero = "0";
             String propOut = CommandShell.normalShell(cGetMsimProp);
-            Toast.makeText(getApplicationContext(), "got prop output", Toast.LENGTH_SHORT).show();
+            Log.i(TAG, "MsimEnDe: got prop output");
 
             if (propOut.equals(one)) {
 
