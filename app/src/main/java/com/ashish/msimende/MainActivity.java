@@ -2,6 +2,7 @@ package com.ashish.msimende;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -51,6 +52,7 @@ public class MainActivity extends Activity {
         String msimValue = "dsds";
         String msimStatus = CommandShell.normalShell(cGetMsim);
         return msimStatus.equals(msimValue);
+
     }
 
     public void EnableDualSim(View view) {
@@ -164,4 +166,5 @@ public class MainActivity extends Activity {
 
         goTo(URL);
     }
+
 }
