@@ -68,7 +68,7 @@ public class MsimService extends Service {
             String propOut = CommandShell.normalShell(cGetMsimProp);
             Log.i(TAG, "MsimEnDe: got prop output");
 
-            if (propOut.equals(one)) {
+            if (propOut.equals(one) || propOut.matches("")) {
 
                 Log.i(TAG, "MsimEnDe: propOut returned 1");
                     PackageManager pm = getPackageManager();
