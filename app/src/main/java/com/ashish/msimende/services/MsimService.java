@@ -68,6 +68,11 @@ public class MsimService extends Service {
             String propOut = CommandShell.normalShell(cGetMsimProp);
             Log.i(TAG, "MsimEnDe: got prop output");
 
+            /* build properties are used to enable or disable features or
+             * to know that the following feature is present for the device.
+             * When the build.prop doesn't have the propOut or returns 1(which is a String not a byte/binary number)
+             * this app hides itself from the launcher.
+             */
             if (propOut.equals(one) || propOut.matches("")) {
 
                 Log.i(TAG, "MsimEnDe: propOut returned 1");
